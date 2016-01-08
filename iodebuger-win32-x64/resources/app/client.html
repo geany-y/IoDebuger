@@ -29,7 +29,7 @@
     socket.on('phpvar', function(data) {
       if(data){
         console.log(data);
-	$('#messages').append($('<br />' + data.phpvar);
+	$('#messages').append('<br />' + data.phpvar);
       }
     });
     socket.on('disconnect', function(){
