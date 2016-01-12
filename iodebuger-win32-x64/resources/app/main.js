@@ -20,7 +20,10 @@ app.on('window-all-closed', function() {
 
 app.on('ready', function() {
   mainWindow = new BrowserWindow({
-    width: 800, height: 600, 'node-integration': false
+    width: 800,
+    height: 600,
+    'node-integration': false,
+    'always-on-top': true
   });
 
   mainWindow.loadUrl('http://localhost:3000/');
